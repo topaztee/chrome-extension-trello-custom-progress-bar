@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+
+    "name": "blah",
+    "short_name": "blah",
+    "description": "blah",
+    "version": "1.0",
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+
+    "browser_action": {
+        "default_title": "blahblah",
+        "default_icon": {
+          "16": "16.png",
+          "32": "32.png"
+        }
+      },
+
+    "icons": {
+        "128": "128.png",
+        "16": "16.png",
+        "48": "48.png"
+     },
+
+    "content_scripts": [{
+        "css": ["styles.css", "test.scss"],
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }]
+  }
