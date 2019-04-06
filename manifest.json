@@ -1,27 +1,28 @@
 {
     "manifest_version": 2,
 
-    "name": "blah",
+    "name": "rainbow checklist",
     "short_name": "blah",
     "description": "blah",
     "version": "1.0",
 
     "permissions": [
-        "activeTab",
          "tabs",
         "storage",
-        "*://*.trello.com/*"
+      "webNavigation"
     ],
-  "background": {
-    "scripts": ["background.js"]
-  },
     "browser_action": {
         "default_title": "blahblah",
         "default_icon": {
           "16": "16.png",
           "32": "32.png"
         }
-      },
+    },
+  "background": {
+    "matches": ["*://trello.com/c/*"],
+    "scripts": ["background.js"],
+    "persistent": false
+  },
 
     "icons": {
         "128": "128.png",
@@ -30,8 +31,7 @@
      },
 
     "content_scripts": [{
-        "css": ["styles.css", "test.scss"],
-        "matches": ["<all_urls>"],
+        "matches": ["*://trello.com/*"],
         "js": ["content.js"]
       }]
   }
