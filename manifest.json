@@ -8,9 +8,13 @@
 
     "permissions": [
         "activeTab",
-        "storage"
+         "tabs",
+        "storage",
+        "*://*.trello.com/*"
     ],
-
+  "background": {
+    "scripts": ["background.js"]
+  },
     "browser_action": {
         "default_title": "blahblah",
         "default_icon": {

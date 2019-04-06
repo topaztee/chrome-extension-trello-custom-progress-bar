@@ -1,56 +1,56 @@
-/* --- BUBBLES--  */
+/*!* --- BUBBLES--  *!*/
 
-/* unchecked */
-div.checklist-item-checkbox {
-    border-radius: 50%;
-}
+/*!* unchecked *!*/
+/*div.checklist-item-checkbox {*/
+    /*border-radius: 50%;*/
+/*}*/
 
-/* ensures the square style isnt rendered */
-div.checklist-item-checkbox.enabled {
-    border-radius: 50%;
-    border-color: transparent;
-}
+/*!* ensures the square style isnt rendered *!*/
+/*div.checklist-item-checkbox.enabled {*/
+    /*border-radius: 50%;*/
+    /*border-color: transparent;*/
+/*}*/
 
-/* checked*/
-div.checklist-item.checklist-item-state-complete > div.checklist-item-checkbox.enabled.js-toggle-checklist-item {
-    border-radius: 50%;
-    background-color: darkseagreen;;
-    box-shadow: inset 0 0 0 2px #dfe3e6;
-    /*animation: 1s ripple ease-out;*/
+/*!* checked*!*/
+/*div.checklist-item.checklist-item-state-complete > div.checklist-item-checkbox.enabled.js-toggle-checklist-item {*/
+    /*border-radius: 50%;*/
+    /*background-color: darkseagreen;;*/
+    /*box-shadow: inset 0 0 0 2px #dfe3e6;*/
+    /*!*animation: 1s ripple ease-out;*!*/
 
-}
+/*}*/
 
-@keyframes ripple {
-    from {
-        transform: scale(0);
-        opacity: 1;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-div.checklist-item-checkbox.enabled:active {
-    background-color: #dfe3e6;
-}
-
-
-/*@keyframes grow-line {*/
-	/*from {*/
-        /*left: 50%;*/
-        /*width: 0;*/
-        /*transform-origin: 0% 5px;*/
-        /*animation-timing-function: cubic-bezier(.2, .4, .8, .8);*/
+/*@keyframes ripple {*/
+    /*from {*/
+        /*transform: scale(0);*/
+        /*opacity: 1;*/
+    /*}*/
+    /*to {*/
+        /*transform: scale(1);*/
+        /*opacity: 1;*/
     /*}*/
 /*}*/
 
+/*div.checklist-item-checkbox.enabled:active {*/
+    /*background-color: #dfe3e6;*/
+/*}*/
 
-div.checklist-item-checkbox.enabled > span.icon-sm.icon-check.checklist-item-checkbox-check {
-    display: none;
-}
 
- /*percentage*/
-div.checklist-progress-bar-current.js-checklist-progress-bar {
-    background: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-}
+/*!*@keyframes grow-line {*!*/
+	/*!*from {*!*/
+        /*!*left: 50%;*!*/
+        /*!*width: 0;*!*/
+        /*!*transform-origin: 0% 5px;*!*/
+        /*!*animation-timing-function: cubic-bezier(.2, .4, .8, .8);*!*/
+    /*!*}*!*/
+/*!*}*!*/
+
+
+/*div.checklist-item-checkbox.enabled > span.icon-sm.icon-check.checklist-item-checkbox-check {*/
+    /*display: none;*/
+/*}*/
+
+ /*!*percentage*!*/
+/*div.checklist-progress-bar-current.js-checklist-progress-bar {*/
+    /*background: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);*/
+/*}*/
