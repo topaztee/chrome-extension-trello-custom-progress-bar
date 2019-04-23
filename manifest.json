@@ -1,37 +1,36 @@
 {
-    "manifest_version": 2,
+  "manifest_version": 2,
 
-    "name": "rainbow checklist",
-    "short_name": "blah",
-    "description": "blah",
-    "version": "1.0",
+  "name": "Trello custom progress bar",
+  "short_name": "Trello custom progress bar",
+  "description": "Customize you Trello progress bar",
+  "version": "1.1",
 
-    "permissions": [
-         "tabs",
-        "storage",
-      "webNavigation"
-    ],
-    "browser_action": {
-        "default_title": "blahblah",
-        "default_icon": {
-          "16": "16.png",
-          "32": "32.png"
-        }
-    },
+  "permissions": ["tabs", "storage", "webNavigation"],
+  "browser_action": {
+    "default_title": "blahblah",
+    "default_icon": {
+      "32": "32.png"
+    }
+  },
   "background": {
     "matches": ["*://trello.com/c/*"],
     "scripts": ["background.js"],
     "persistent": false
   },
 
-    "icons": {
-        "128": "128.png",
-        "16": "16.png",
-        "48": "48.png"
-     },
+  "icons": {
+    "32": "32.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
 
-    "content_scripts": [{
-        "matches": ["*://trello.com/*"],
-        "js": ["content.js"]
-      }]
-  }
+  "content_scripts": [
+    {
+      "matches": ["*://trello.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": ["*.png"],
+  "options_page": "options.html"
+}
