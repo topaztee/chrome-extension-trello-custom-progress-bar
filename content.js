@@ -12,6 +12,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 function updatePage(){
   checklistElem = document.getElementsByClassName('checklist-progress-bar-current js-checklist-progress-bar');
+  checklist = document.getElementsByClassName('checklist-progress-bar');
   chrome.storage.sync.get({userChoice: 'rainbow'}, function(settings) {
     if ('rainbow' === settings.userChoice) {
       checklist[0].style["height"] = '10px';
